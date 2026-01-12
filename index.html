@@ -4,48 +4,69 @@
   <meta charset="UTF-8">
   <title>Nutri Rick</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
       background: #f6f6f6;
-      margin: 0;
-      padding: 0;
+      width: 100vw;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
       text-align: center;
     }
+
+    /* FULL SCREEN HERO */
     .box {
       background: white;
-      padding: 40px;
-      max-width: 640px;
-      border-radius: 8px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      width: 100vw;
+      height: 100vh;
+      padding: 100px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
- .logo {
-  max-width: 280px;
-  margin-bottom: 24px;
-}
-    h1 {
-  margin-bottom: 14px;
-  font-size: 2rem;
-}
 
-p {
-  color: #555;
-  font-size: 1.05rem;
-}
+    .logo {
+      max-width: 520px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #555;
+      font-size: 1.3rem;
+      line-height: 1.6;
+      margin: 8px 0;
+    }
+
+    .contact {
+      margin-top: 20px;
+      font-weight: bold;
+    }
   </style>
 </head>
+
 <body>
   <div class="box">
-  <img src="assets/logo.png" alt="Nutri Rick logo" class="logo">
+    <img src="assets/logo.png" alt="Nutri Rick logo" class="logo">
 
-  <h1>Nutri Rick</h1>
-  <p>Personal Nutrition & Lifestyle Coaching</p>
-  <p>Website coming soon.</p>
-  <p>Contact: <strong>hello@nutririck.com</strong></p>
-</div>
+    <h1>Nutri Rick</h1>
+    <p>Personal Nutrition & Lifestyle Coaching</p>
+    <p>Website coming soon.</p>
+    <p class="contact">Contact: hello@nutririck.com</p>
+  </div>
 </body>
 </html>
